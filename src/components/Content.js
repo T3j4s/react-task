@@ -5,11 +5,11 @@ import tabImage3 from "../images/tab3.jpg";
 import html2pdf from "html2pdf.js";
 
 const Content = () => {
-  function test1() {
+  function emailSender() {
     console.log("Hello World");
   }
 
-  function test() {
+  function pdfMaker() {
     try {
       var element = document.getElementById("nav-tabContent").childNodes;
 
@@ -81,10 +81,10 @@ const Content = () => {
       </nav>
 
       <div className="container-fluid py-1 bg-light">
-        <button className="btn btn-dark me-2" onClick={test1}>
+        <button className="btn btn-dark me-2" onClick={emailSender}>
           <FaShareAlt />
         </button>
-        <button className="btn btn-dark" id="test" onClick={test}>
+        <button className="btn btn-dark" id="test" onClick={pdfMaker}>
           PDF
         </button>
       </div>
